@@ -1,134 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
-  Features
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <script src="/Bookmark-landing-page/assets/main.js" defer="true" type="module"></script>
+    <link rel="stylesheet" href="/Bookmark-landing-page/assets/bundle.css">
+  </head>
+  <body>
+    <header>
+      <section class="headerSection">
+        <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"></path>
+            <g>
+              <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"></circle>
+              <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"></path>
+            </g>
+          </g>
+        </svg>
+        <article class="headerSection__article">
+          <nav>
+            <ul class="headerSection__article__list">
+              <li>
+                <a href="" class="headerSection__article__list-item">FEATURES</a>
+              </li>
+              <li>
+                <a href="" class="headerSection__article__list-item">PRICING</a>
+              </li>
+              <li>
+                <a href="" class="headerSection__article__list-item">CONTACT</a>
+              </li>
+            </ul>
+            <button class="headerSection__article__buttonBurger" data-js-button-openMenu="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+                <path fill="#242A45" fill-rule="evenodd" d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z"></path>
+              </svg>
+            </button>
+          </nav>
+          <section class="burgerSection" data-js-burgerMenu="true">
+            <div class="burgerSection__logoDiv">
+              <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg" class="burgerSection__logoDiv__logo">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"></path>
+                  <g>
+                    <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"></circle>
+                    <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"></path>
+                  </g>
+                </g>
+              </svg>
+              <button class="burgerSection__logoDiv__buttonClose" data-js-button-closeMenu="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
+                  <path fill="#FFF" fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"></path>
+                </svg>
+              </button>
+            </div>
+            <nav class="burgerSection__nav">
+              <ul class="burgerSection__nav__list">
+                <li>
+                  <a href="" class="burgerSection__nav__list__item">FEATURES</a>
+                </li>
+                <li>
+                  <a href="" class="burgerSection__nav__list__item">PRICING</a>
+                </li>
+                <li>
+                  <a href="" class="burgerSection__nav__list__item">CONTACT</a>
+                </li>
+              </ul>
+              <button class="burgerSection__nav__button">LOGIN</button>
+            </nav>
+            <div class="burgerSection__socialsDiv">
+              <button class="burgerSection__socialsDiv__facebook">
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+                  </svg>
+                </a>
+              </button>
+              <button class="burgerSection__socialsDiv__twitter">
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                    <path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"></path>
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </section>
+          <button class="headerSection__article__button">LOGIN</button>
+        </article>
+      </section>
+    </header>
+    <main>
+      <section class="managerSection">
+        <article class="managerSection__article">
+          <h1 class="managerSection__article__title">A Simple Bookmark<br>Manager</h1>
+          <p class="managerSection__article__text">A clean and simple interface to organize your favourite<br class="managerSection__br">websites. Open a new browser tab and see your sites load<br class="managerSection__br">instantly. Try it for free.</p>
+          <div class="managerSection__article__div">
+            <button class="managerSection__article__div-chromeButton">Get it on Chrome</button>
+            <button class="managerSection__article__div-firefoxButton">Get it on Firefox</button>
+          </div>
+        </article>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="657" height="466" class="managerSection__illustration">
+          <defs>
+            <filter id="a" width="118%" height="126.9%" x="-9%" y="-5.7%" filterUnits="objectBoundingBox">
+              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"></feGaussianBlur>
+              <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"></feColorMatrix>
+              <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+            </filter>
+            <rect id="c" width="578" height="385" rx="26"></rect>
+            <filter id="b" width="126%" height="139%" x="-13%" y="-11.7%" filterUnits="objectBoundingBox">
+              <feOffset dy="30" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"></feGaussianBlur>
+              <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.18243335 0 0 0 0 0.230632694 0 0 0 0 0.506057518 0 0 0 0.200120192 0"></feColorMatrix>
+            </filter>
+            <linearGradient id="d" x1="99.013%" x2="2.544%" y1="71.675%" y2="29.014%">
+              <stop offset="0%" stop-color="#151515"></stop>
+              <stop offset="100%" stop-color="#3D3D3D"></stop>
+            </linearGradient>
+            <rect id="e" width="536" height="346" y="3" rx="8"></rect>
+          </defs>
+          <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(39 9)">
+            <g transform="translate(.5 .5)">
+              <g fill-rule="nonzero">
+                <use fill="#000" filter="url(#b)" xlink:href="#c"></use>
+                <use fill="#777" xlink:href="#c"></use>
+              </g>
+              <rect width="574.23" height="381.865" x="2" y="2" fill="url(#d)" fill-rule="nonzero" rx="25"></rect>
+              <g transform="translate(21.03 16.303)">
+                <rect width="471.463" height="353.756" x="33" fill="#2A2A2A" fill-rule="nonzero" opacity="0.1" rx="5"></rect>
+                <mask id="f" fill="#fff">
+                  <use xlink:href="#e"></use>
+                </mask>
+                <use fill="#E8EAF6" fill-rule="nonzero" xlink:href="#e"></use>
+                <g mask="url(#f)">
+                  <path fill="#5267DF" d="M-3.53 3.197h547v59h-547z"></path>
+                  <g transform="translate(22.47 17.197)" fill="#FFF">
+                    <circle cx="16" cy="16" r="16" opacity="0.245"></circle>
+                    <circle cx="477" cy="16" r="16" opacity="0.104"></circle>
+                    <g transform="translate(47 6)">
+                      <rect width="120" height="6" opacity="0.75" rx="3"></rect>
+                      <rect width="64" height="6" y="14" opacity="0.25" rx="3"></rect>
+                    </g>
+                  </g>
+                </g>
+                <g mask="url(#f)">
+                  <g transform="translate(57 96)">
+                    <rect width="261" height="316" fill="#FFF" rx="8"></rect>
+                    <rect width="128" height="316" x="295" fill="#FFF" rx="8"></rect>
+                    <rect width="120" height="6" x="78.47" y="38.197" fill="#242A45" opacity="0.5" rx="3"></rect>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g transform="translate(110 135)">
+              <circle cx="16" cy="26" r="16" fill="#F98E5D"></circle>
+              <rect width="88" height="6" x="284" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="20" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="40" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="60" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="94" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="114" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="88" height="6" x="284" y="134" fill="#242A45" opacity="0.25" rx="3"></rect>
+              <rect width="64" height="6" x="47" y="30" fill="#242A45" opacity="0.25" rx="3"></rect>
+            </g>
+            <g transform="translate(110 201)">
+              <circle cx="16" cy="16" r="16" fill="#6AC6D6"></circle>
+              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity="0.5" rx="3"></rect>
+              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity="0.25" rx="3"></rect>
+            </g>
+            <g transform="translate(110 257)">
+              <circle cx="16" cy="16" r="16" fill="#A47ED4"></circle>
+              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity="0.5" rx="3"></rect>
+              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity="0.25" rx="3"></rect>
+            </g>
+            <g transform="translate(110 313)">
+              <circle cx="16" cy="16" r="16" fill="#EC7878"></circle>
+              <rect width="120" height="6" x="47" y="6" fill="#242A45" opacity="0.5" rx="3"></rect>
+              <rect width="64" height="6" x="47" y="20" fill="#242A45" opacity="0.25" rx="3"></rect>
+            </g>
+          </g>
+        </svg>
+        <div class="managerSection__div"></div>
+      </section>
+      <section class="featureSection">
+        <article class="featureSection__featuresArticle">
+          <h2 class="featureSection__featuresArticle__title">Features</h2>
+          <p class="featureSection__featuresArticle__text">Our aim is to make it quick and easy for you to access your<br class="featureSection__br">favourite websites. Your bookmarks sync between your devices<br class="featureSection__br">so you can access them on the go.</p>
+        </article>
+        <article class="featureSection__buttonsArticle">
+          <button class="featureSection__buttonsArticle__item" data-js-featureButton="true">Simple Bookmarking</button>
+          <button class="featureSection__buttonsArticle__item" data-js-featureButton="true">Speedy Searching</button>
+          <button class="featureSection__buttonsArticle__item" data-js-featureButton="true">Easy Sharing</button>
+        </article>
+        <article class="featureSection__bookmarkArticle">
+          <div class="featureSection__bookmarkArticle__div"></div>
+          <img srcset="/Bookmark-landing-page/assets/images/illustration-features-tab-1-320x208.jpg 320w, /Bookmark-landing-page/assets/images/illustration-features-tab-1-400x260.jpg 400w, /Bookmark-landing-page/assets/images/illustration-features-tab-1-536x346.jpg 536w" src="/Bookmark-landing-page/assets/images/illustration-features-tab-1-536x346.jpg" sizes="(min-width: 536px) 536px, 100vw" width="536" height="346" alt decoding="async" loading="lazy" class="featureSection__bookmarkArticle__image" data-js-tab-illustration="true">
+          <article class="featureSection__bookmarkArticle__article">
+            <h2 class="featureSection__bookmarkArticle__article__title" data-js-featureTitle="true">Bookmark in one click</h2>
+            <p class="featureSection__bookmarkArticle__article__text" data-js-featureText="true">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="featureSection__bookmarkArticle__article__button">More Info</button>
+          </article>
+        </article>
+      </section>
+      <section class="browserSection">
+        <article class="browserSection__article">
+          <h3 class="browserSection__article__title">Download the extension</h3>
+          <p class="browserSection__article__text">We’ve got more browsers in the pipeline. Please do let us know if<br class="browserSection__br">you’ve got a favourite you’d like us to prioritize.</p>
+        </article>
+        <article class="browserSection__articleCards">
+          <article class="browsers">
+            <svg xmlns="http://www.w3.org/2000/svg" width="102" height="100">
+              <g fill="none">
+                <path fill="#E16B5A" d="M50.768.01s30.01-1.325 45.916 28.249H48.217s-9.154-.296-16.957 10.594c-2.25 4.561-4.65 9.27-1.95 18.538-3.9-6.472-20.708-35.164-20.708-35.164S20.457 1.186 50.768.009z"></path>
+                <path fill="#FFD464" d="M95.122 75.095S81.284 101.238 47.21 99.952C51.414 92.82 71.45 58.8 71.45 58.8s4.837-7.626-.875-19.696c-2.903-4.192-11.7-8.586-21.237-10.928 7.67-.075 47.25.005 47.25.005s12.653 20.59-1.466 46.915z"></path>
+                <path fill="#74B340" d="M6.628 75.294s-16.17-24.825 2.004-53.116l24.225 41.163s4.314 7.92 17.832 9.104c5.153-.368 10.514-.682 17.351-7.607C64.27 71.387 47.327 100 47.327 100s-24.51.448-40.7-24.706z"></path>
+                <ellipse cx="50.646" cy="50.406" fill="#FFF" rx="23.064" ry="22.656"></ellipse>
+                <ellipse cx="50.638" cy="50.406" fill="#2995CC" rx="18.292" ry="17.969"></ellipse>
+                <path fill="#268CBF" d="M50.643 32.441c-.364 0-.724.014-1.082.034 9.598.55 17.209 8.369 17.209 17.934 0 9.568-7.611 17.386-17.21 17.937.36.02.72.034 1.083.034 10.101 0 18.292-8.046 18.292-17.97 0-9.923-8.19-17.969-18.292-17.969z"></path>
+              </g>
+            </svg>
+            <div class="browsers__div">
+              <h4 class="browsers__div__title">Add to Chrome</h4>
+              <p class="browsers__div__text">Minimum version 62</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="280" height="4">
+              <path fill="#495DCF" fill-opacity="0.2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+            </svg>
+            <button class="browsers__button">Add &amp; Install Extension</button>
+          </article>
+          <article class="browsers">
+            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="100">
+              <path fill="#FF9800" d="M105 50c0 28.862-23.513 50-52.5 50S0 76.588 0 47.726c0-9.043 2.33-17.59 6.392-25a.995.995 0 0 1 .23-.366C4.338 18.956 3.334 10.318 9.128 4.541c0 2.411 1.464 6.548 3.104 9.638 1.326 2.457 2.737 4.228 3.741 4 2.284-.543 10.27-.543 11.412 0 1.877-2.405 6.445-9.09 13.703-9.09-4.062 4.045-15.704 18.185 4.567 18.185h4.568L36.52 36.363s1.556 3 0 4.548c-1.732-1.732-9.128 1.862-9.128 6.815s5.296 11.363 15.98 11.363c10.683 0 7.986-4.548 13.696-4.548 5.709 0 6.844 4.548 6.844 4.548-7.855 0-13.558 9.09-22.824 9.09 4.567 3.364 7.58 4.547 13.696 4.547 15.113 0 27.392-12.225 27.392-27.274 0-6.09-2.008-11.683-5.388-16.224a27.414 27.414 0 0 1 10.96 19.498 40.554 40.554 0 0 0 1.279-10.089c0-13.683-5.84-31.776-15.98-38.637C87.655 4.358 105 18.466 105 45.452V50z"></path>
+            </svg>
+            <div class="browsers__div">
+              <h4 class="browsers__div__title">Add to Firefox</h4>
+              <p class="browsers__div__text">Minimum version 55</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="280" height="4">
+              <path fill="#495DCF" fill-opacity="0.2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+            </svg>
+            <button class="browsers__button">Add &amp; Install Extension</button>
+          </article>
+          <article class="browsers">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="100">
+              <path fill="#EB6060" fill-rule="evenodd" d="M48 100C21.49 100 0 77.614 0 50S21.49 0 48 0s48 22.386 48 50-21.49 50-48 50zm0-10c13.807 0 25-17.909 25-40S61.807 10 48 10 23 27.909 23 50s11.193 40 25 40z"></path>
+            </svg>
+            <div class="browsers__div">
+              <h4 class="browsers__div__title">Add to Opera</h4>
+              <p class="browsers__div__text">Minimum version 46</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="280" height="4">
+              <path fill="#495DCF" fill-opacity="0.2" fill-rule="evenodd" d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+            </svg>
+            <button class="browsers__button">Add &amp; Install Extension</button>
+          </article>
+        </article>
+      </section>
+      <section class="question">
+        <article class="question__articleTitle">
+          <h5 class="question__articleTitle__title">Frequently Asked Questions</h5>
+          <p class="question__articleTitle__text">Here are some of our FAQs. If you have any other questions<br class="question__br">you’d like answered please feel free to email us.</p>
+        </article>
+        <article class="question__articleQuestions">
+          <div class="blockQuestions">
+            <div class="blockQuestions__div">
+              <button class="blockQuestions__itemDiv" aria-controls="a1" data-js-buttonOpen-answer="true">
+                <p class="blockQuestions__itemDiv__text">What is Bookmark?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="blockQuestions__itemDiv__button" data-js-arrowDown="true">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"></path>
+                </svg>
+              </button>
+              <div class="blockQuestions__answer" id="a1" data-js-answer="true">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+              </div>
+            </div>
+            <div class="blockQuestions__div">
+              <button class="blockQuestions__itemDiv" aria-controls="a2" data-js-buttonOpen-answer="true">
+                <p class="blockQuestions__itemDiv__text">How can I request a new browser?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="blockQuestions__itemDiv__button" data-js-arrowDown="true">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"></path>
+                </svg>
+              </button>
+              <div class="blockQuestions__answer" id="a2" data-js-answer="true">
+                <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+              </div>
+            </div>
+            <div class="blockQuestions__div">
+              <button class="blockQuestions__itemDiv" aria-controls="a3" data-js-buttonOpen-answer="true">
+                <p class="blockQuestions__itemDiv__text">Is there a msobile app?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="blockQuestions__itemDiv__button" data-js-arrowDown="true">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"></path>
+                </svg>
+              </button>
+              <div class="blockQuestions__answer" id="a3" data-js-answer="true">
+                <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+              </div>
+            </div>
+            <div class="blockQuestions__div">
+              <button class="blockQuestions__itemDiv" aria-controls="a4" data-js-buttonOpen-answer="true">
+                <p class="blockQuestions__itemDiv__text">What about other Chromium browsers?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="blockQuestions__itemDiv__button" data-js-arrowDown="true">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"></path>
+                </svg>
+              </button>
+              <div class="blockQuestions__answer" id="a4" data-js-answer="true">
+                <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+              </div>
+            </div>
+          </div>
+          <button class="question__articleQuestions__button">More Info</button>
+        </article>
+      </section>
+      <section class="formSection">
+        <p class="formSection__text">35,000+ ALREADY JOINED</p>
+        <h6 class="formSection__title">Stay up-to-date with what<br>we’re doing</h6>
+        <form action="" class="formSection__form" data-js-form="true" novalidate="">
+          <div class="formSection__form__errorDiv" data-js-errorDiv="true">
+            <input type="email" placeholder="Enter your email address" class="formSection__form__inputEmail" minLength="12" maxLength="28" data-js-form-emailField="true" required="" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" aria-errormessage="errorMessage"><span id="errorMessage" class="formSection__form__errorDiv__error">
+              <em data-js-errorMessage="true"></em>
+            </span>
+          </div>
+          <button type="submit" class="formSection__form__buttonSubmit">Contact Us</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footerSection">
+        <div class="footerSection__divNav">
+          <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg" class="logo">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"></path>
+              <g>
+                <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"></circle>
+                <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"></path>
+              </g>
+            </g>
+          </svg>
+          <nav>
+            <ul class="footerSection__divNav__nav">
+              <li>
+                <a href="" class="footerSection__divNav__nav__item">FEATUES</a>
+              </li>
+              <li>
+                <a href="" class="footerSection__divNav__nav__item">PRICING</a>
+              </li>
+              <li>
+                <a href="" class="footerSection__divNav__nav__item">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footerSection__divButtons">
+          <button class="footerSection__divButtons__item">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="test">
+                <path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+              </svg>
+            </a>
+          </button>
+          <button class="footerSection__divButtons__item">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"></path>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
