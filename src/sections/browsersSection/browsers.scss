@@ -1,0 +1,127 @@
+@import "@/styles/variables.scss";
+
+.browserSection {
+    padding: 50px 200px 100px 200px;
+    display: grid;
+    justify-items: center;
+    gap:100px;
+
+    &__article {
+        display: grid;
+        gap:30px;
+        justify-items: center;
+
+        &__title {
+            font-size: clamp(1.8rem,2vw,10rem);
+            color: $blue950;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: clamp(1.2rem,1.05vw,10rem);
+            text-align: center;
+            color: $grey50;
+        }
+    }
+
+    &__articleCards {
+        display: flex;
+        gap:80px;
+    }
+}
+
+.browsers {
+    display: grid;
+    gap:30px;
+    justify-items: center;
+    box-shadow: 0 15px 30px rgba(15, 25, 65, 0.15);
+    padding-top: 30px;
+    border-radius: 14px;
+    height: 350px;
+
+    &__div {
+        display: grid;
+        gap:10px;
+        justify-items: center;
+
+        &__title {
+            color: $blue950;
+            font-weight: 500;   
+            font-size: clamp(1.3rem,1.3vw,10rem);
+        }
+
+        &__text {
+            color: $grey50;
+            font-size: clamp(1rem,0.95vw,10rem);
+        }
+    }
+
+    &__button {
+        color: white;
+        background-color: $blue600;
+        font-size: clamp(1rem,0.9vw,10rem);
+        font-weight: 500;
+        border: 0px;
+        padding: 13px 35px 13px 35px;
+        margin: 0px 20px 30px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+        transition-property: all;
+        border: 2px solid $blue600;
+
+        &:hover {
+            background-color: transparent;
+            color: $blue600;
+        }
+    }
+
+    &:nth-child(2) {
+        margin-top: 50px;
+        // background-color: red;
+        // padding-top: 500px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 100px;
+        // background-color: red;
+        // padding-top: 500px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .browserSection {
+        padding: 50px 100px 100px 100px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .browserSection {
+        padding: 50px 50px 100px 50px;
+    }   
+}
+
+@media (max-width: 1180px) {
+    .browserSection__articleCards {
+        gap:40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .browserSection {
+        padding: 50px 30px 100px 30px;
+
+        &__articleCards {
+            display: grid;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .browserSection__br {
+        display: none;
+    }
+}
