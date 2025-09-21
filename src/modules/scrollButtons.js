@@ -1,6 +1,6 @@
-import img1 from "../assets/icons/illustration-features-tab-1.svg"
-import img2 from "../assets/icons/illustration-features-tab-1.svg"
-import img3 from "../assets/icons/illustration-features-tab-1.svg"
+import img1 from "../public/images/illustration-features-tab-1.svg"
+import img2 from "../public/images/illustration-features-tab-1.svg"
+import img3 from "../public/images/illustration-features-tab-1.svg"
 
 const scrollButtons = () => {
     console.log("Scroll buttons")
@@ -14,17 +14,17 @@ const scrollButtons = () => {
     
     const infoTab = [
         {   
-            image: "/public/images/illustration-features-tab-1.svg", 
+            image: img1, 
             title: "Bookmark in one click", 
             text: "Organize your bookmarks however you like. Oursimple drag-and-drop interface gives you completecontrol over how you manage your favourite sites."
         },
         { 
-            image: "/public/images/illustration-features-tab-2.svg", 
+            image: img2, 
             title: "Intelligent search", 
             text: "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks."
         },
         { 
-            image: "/public/images/illustration-features-tab-3.svg", 
+            image: img3, 
             title: "Share your bookmarks", 
             text: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
         },
